@@ -1,0 +1,16 @@
+function Armst(chisl) {
+		let str = String(chisl);
+		let arr = str.split('');
+		let sum = 0;
+		for (let i = 0; i<arr.length; i++) {
+			sum += Number(arr[i]) ** arr.length;
+		}
+		if (chisl === sum){
+			console.log("Это число Армстронга!");
+		}
+		else {
+			console.log("Мда, и че это такое?");
+		}
+
+	}
+Armst(234);
